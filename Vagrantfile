@@ -25,7 +25,7 @@ servers = [
 ]
 
 # cookbook path
-cookbooks_path = 'berks_cookbooks'
+cookbooks_path = 'cookbooks'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
@@ -53,6 +53,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       node_config.vm.provision :chef_solo do |chef|
         chef.data_bags_path = './data_bags'
         chef.json = boxes[server[:type]]['json']
+        chef.cookbooks_path = [cookbooks_path]
 
         boxes[server[:type]]['recipes'].each do |recipe|
           chef.add_recipe recipe
