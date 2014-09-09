@@ -1,0 +1,4 @@
+.idea/
+.vagrant/
+.kitchen/
+berks_cookbooks/

@@ -1,0 +1,30 @@
+{
+  "name": "d2",
+  "fqdn": "d2",
+  "ipaddress": "d2",
+  "hostname": "d2",
+  "chef_environment": "_default",
+  "recipes": [
+    "chef-solo-search",
+    "mongodb::shard",
+    "mongodb::replicaset"
+  ],
+  "mongodb_is_shard": true,
+  "mongodb_cluster_name": "vagrant",
+  "mongodb_is_replicaset": true,
+  "mongodb_shard_name": "default",
+  "mongodb": {
+    "replica_arbiter_only": false,
+    "replica_build_indexes": true,
+    "replica_hidden": false,
+    "replica_slave_delay": 0,
+    "replica_priority": 1,
+    "replica_votes": 1,
+    "replica_tags": {},
+    "slave_delay": 0,
+    "shard_name": "default",
+    "config": {
+      "port": 27017
+    }
+  }
+}

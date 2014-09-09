@@ -1,0 +1,19 @@
+{
+  "name": "c2",
+  "fqdn": "c2",
+  "ipaddress": "c2",
+  "hostname": "c2",
+  "chef_environment": "_default",
+  "recipes": [
+    "chef-solo-search",
+    "mongodb::configserver"
+  ],
+  "mongodb_is_configserver": true,
+  "mongodb_cluster_name": "vagrant",
+  "mongodb": {
+    "shard_name": "default",
+    "config": {
+      "port": 27019
+    }
+  }
+}
