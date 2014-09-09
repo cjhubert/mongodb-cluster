@@ -1,0 +1,21 @@
+{
+  "box": "ubuntu1204-chef1144",
+  "boxurl": "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_chef-11.4.4.box",
+  "recipes": [
+    "chef-solo-search",
+    "mongodb::configserver"
+  ],
+  "json": {
+    "mongodb": {
+      "user": "vagrant",
+      "group": "vagrant",
+      "install_method": "mongodb-org",
+      "default_init_name": "mongod",
+      "dbconfig_file": "mongodb.conf",
+      "cluster_name": "vagrant",
+      "config": {
+        "port": 27019
+      }
+    }
+  }
+}

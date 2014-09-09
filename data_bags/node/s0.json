@@ -1,0 +1,18 @@
+{
+  "name": "s0",
+  "fqdn": "s0",
+  "ipaddress": "s0",
+  "hostname": "s0",
+  "chef_environment": "_default",
+  "recipes": [
+    "chef-solo-search",
+    "mongodb::mongos"
+  ],
+  "mongodb_cluster_name": "vagrant",
+  "mongodb": {
+    "shard_name": "default",
+    "config": {
+      "port": 27017
+    }
+  }
+}
