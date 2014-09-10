@@ -13,6 +13,7 @@ cd mongodb-cluster
 vagrant plugin install vagrant-auto_network
 vagrant plugin install vagrant-hostmanager
 vagrant plugin install vagrant-triggers
+vagrant plugin install vagrant-omnibus
 
 vagrant up
 ```
