@@ -4,7 +4,8 @@
   "recipes": [
     "chef-solo-search",
     "mongodb::shard",
-    "mongodb::replicaset"
+    "mongodb::replicaset",
+    "mongodb::user_management"
   ],
   "json": {
     "name": "d0",
@@ -16,8 +17,10 @@
       "is_replicaset": true,
       "cluster_name": "vagrant",
       "shard_name": "default",
-      "config": {
-        "replSet": "rs_default"
+      "key_file_content": "2pJs9ckLBfDZqyJvOqJKq8+syy9Vsd/lXkyN2wK2c66/6GEZKZvffFn+0O3d0fTX\n1rFEPxamTDg7KXwOF8H+v7aSn7k12sh2FpELX7uYKA2/BJ87elbjXngHX9b9HW7l\nDmXVyjgySpaUQu6UXJJD8iO+yaVZVv6BRDcyWMUNgx6VqUkHnyW/m8kHKXVYYsLW\nnQD/mJIVhRqnLo0Rc0wUl9FXjdFoz3MxRaG/PgOlENiqaiWTRKVAs9czS4CoVFQ0\nSGNemD7K9pasxh/LYj4HPLeXTlS1sZUS+djgX9ZI/cBzqlKbi3KMN15sjcRK7jpV\nq9+wM/IEtyUq5XeL2RC+pP7F9JKdgTHRvYjm3DHREtKc2LVeXzq87DmDjzyJhA4v\nQZ6iRM7gzX6h47PDoxgp6NTxPcUE+iGYPA7HeiBtUD5JLaqKCTYwF60l2Y/82cu/\nXS7edLnOKbody0o8scOM48jeiCKEUoaEvCUGtexd/XjqrJXWRlVlWzqkbrDrZpSu\nIpfpKGJ8T4A3REqoLbQw7MvVYsQcUOBseNbqpU3fRa9A/62UvM6J3hDLe5FlHRSj\nhN9hFNEbtVLx/6Am7lHanAQ6pRVuc2WhXGUH36VBYmgKmb+5mPm1k9MfmgU2e8E6\nLjW53OTC13Lwbse8mOU+8ZLeCbH7BStg8GUW90NjswtfFHYK4p0fBacX8peT8s2+\nqE70aYI5akTgBg1fOHhwm6UZPqmilD247jHwOtAhH1c4gpsSwceeX3l9n9d2Fx10\nh6+97xdClP7fgtBiluysCg2S7H+ZwVkOwP5XN+YhOIUWytCFp31F3YbnSCldfGQi\nAumuW1IjgZj66bABQWSSVxh0/c4+HceW007wWvaL4hRjaRboMqg+3wIQif/oku86\n56c8BBkczIJuNIVhKsBrt8/A6AWmpYsMpaEmI3FjXMZA99dUZnWh4SFSx2doBGQM\nNG44b0IaPk+wvaMzdyZljKZF20fV",
+        "config": {
+        "replSet": "rs_default",
+        "auth": true
       },
       "admin": {
         "password": "admin"
