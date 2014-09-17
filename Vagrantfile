@@ -29,7 +29,7 @@ cookbooks_path = 'cookbooks'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.omnibus.chef_version = :latest
+  config.omnibus.chef_version = '11.16'
 
   # Setup hostmanager config to update the host files
   config.hostmanager.enabled = true

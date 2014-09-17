@@ -2,8 +2,8 @@ DEPENDENCIES
   chef-solo-search
   mongodb
     git: https://github.com/ceejh/chef-mongodb.git
-    revision: 707385e4c1f273690f023b6b4ea43b5a66623a8e
-    branch: replicaset-databag-fix
+    revision: 7ff48d0deae150c5cab2d6641f65dcc4df61210a
+    branch: working
   mongodb-cluster
     path: .
     metadata: true
@@ -26,6 +26,6 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  yum (3.3.1)
+  yum (3.3.2)
   yum-epel (0.5.1)
     yum (~> 3.0)
