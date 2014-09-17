@@ -3,13 +3,15 @@
   "boxurl": "http://opscode-vm-bento.s3.amazonaws.com/vagrant/vmware/opscode_ubuntu-12.04_chef-provisionerless.box",
   "recipes": [
     "chef-solo-search",
-    "mongodb::mongos"
+    "mongodb::mongos",
+    "mongodb::user_management"
   ],
   "json": {
     "mongodb": {
       "install_method": "mongodb-org",
       "default_init_name": "mongod",
       "dbconfig_file": "mongodb.conf",
+      "mongos_create_admin": true,
       "cluster_name": "vagrant",
       "sharded_collections": {
         "foo.bar": "baz"
@@ -19,8 +21,7 @@
         "configdb": "c0:27019,c1:27019,c2:27019",
         "nojournal": "",
         "rest": "",
-        "smallfiles": "",
-        "auth": true
+        "smallfiles": ""
       },
       "admin": {
         "password": "admin"
